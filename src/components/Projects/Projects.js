@@ -1,8 +1,8 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import "./Projects.css"; 
 
 function Projects() {
-
     // Sample project data
     const projectList = [
         {
@@ -23,18 +23,18 @@ function Projects() {
     ];
 
     return (
-        <section style={{ padding: "20px", background: "#f9f9f9" }}>
-        <h2>Projects</h2>
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {projectList.map((project, index) => (
-            <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            link={project.link}
-            />
-        ))}
-        </div>
+        <section className="projects-section">
+            <h2 className="projects-title">Projects</h2>
+            <div className="projects-grid">
+                {projectList.map((project, index) => (
+                    <ProjectCard
+                        key={index}
+                        title={project.title}
+                        description={project.description}
+                        link={project.link}
+                    />
+                ))}
+            </div>
         </section>
     );
 }
