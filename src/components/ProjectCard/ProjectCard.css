@@ -7,6 +7,11 @@
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
 }
 
 .project-card:hover {
@@ -23,6 +28,7 @@
 .project-description {
     font-size: 1rem;
     color: #555;
+    flex-grow: 1;
     margin-bottom: 15px;
     line-height: 1.4;
 }
@@ -35,6 +41,7 @@
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    margin-top: auto;
 }
 
 .project-link:hover {
