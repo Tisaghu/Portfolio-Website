@@ -2,32 +2,44 @@ import React from "react";
 import "./TechStack.css";
 
 //Import logos
-import htmlLogo from "../../assets/html5-logo.png";
-import cssLogo from "../../assets/css3-logo.png";
-import jsLogo from "../../assets/js-logo.png";
-import reactLogo from "../../assets/react-logo.png";
-import pythonLogo from "../../assets/python-logo.png";
+import htmlLogo from "../../assets/html5-logo.svg";
+import cssLogo from "../../assets/css-logo.svg";
+import jsLogo from "../../assets/js-logo.svg";
+import pythonLogo from "../../assets/python-logo.svg";
+import phpLogo from "../../assets/php-logo.svg";
+import cSharpLogo from "../../assets/c-sharp-logo.svg";
+import javaLogo from "../../assets/java-logo.svg";
+import reactLogo from "../../assets/react-logo.svg";
+import awsLogo from "../../assets/aws-logo.svg";
+import unityLogo from "../../assets/unity-logo.svg";
+import flaskLogo from "../../assets/flask-logo.svg";
+import mysqlLogo from "../../assets/mysql-logo.svg";
+import bootstrapLogo from "../../assets/bootstrap-logo.svg";
+import gitLogo from "../../assets/git-logo.svg";
+import rLogo from "../../assets/r-logo.svg";
+
+
 
 function TechStack() {
     // Categorize technologies
     const languages = [
-        { name: "HTML", logo: htmlLogo },
+        { name: "HTML", logo: htmlLogo},
         { name: "CSS", logo: cssLogo },
         { name: "JavaScript", logo: jsLogo },
         { name: "Python", logo: pythonLogo },
-        { name: "PHP", logo: "" },
-        { name: "C#", logo: "" },
-        { name: "SQL", logo: "" },
-        { name: "Java", logo: "" },
+        { name: "PHP", logo: phpLogo },
+        { name: "C#", logo: cSharpLogo },
+        { name: "Java", logo: javaLogo },
+        { name: "R", logo: rLogo },
     ];
     const frameworks = [
         { name: "React", logo: reactLogo },
-        { name: "AWS", logo: "" },
-        { name: "Unity", logo: "" },
-        { name: "Flask", logo: "" },
-        { name: "MySQL", logo: "" },
-        { name: "Bootstrap", logo: "" },
-        { name: "Git", logo: "" }
+        { name: "AWS", logo: awsLogo },
+        { name: "Unity", logo: unityLogo},
+        { name: "Flask", logo: flaskLogo },
+        { name: "MySQL", logo: mysqlLogo },
+        { name: "Bootstrap", logo: bootstrapLogo },
+        { name: "Git", logo: gitLogo },
     ];
 
     return (
