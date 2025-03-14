@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navigation.css";
+import { FaBars, FaTimes, FaUser, FaProjectDiagram, FaCode, FaEnvelope} from "react-icons/fa";
 
 function Navigation() {
+    const [isOpen, setIsOpen] = useState(false);
+
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if(section) {
@@ -9,17 +12,29 @@ function Navigation() {
             const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({top: y, behavior: 'smooth'});
         }
+        setIsOpen(false);
     };
 
     return (
-        <nav className="sidebar">
-            <ul>
-                <li onClick={() => scrollToSection("about")}>About</li>
-                <li onClick={() => scrollToSection("projects")}>Projects</li>
-                <li onClick={() => scrollToSection("tech-stack")}>Tech Stack</li>
-                <li onClick={() => scrollToSection("contact")}>Contact</li>
-            </ul>
-        </nav>
+        <>
+            {/*Hamburger Menu Button */}
+            <button className="hamburger" onClick={() => {
+                setIsOpen(!isOpen);
+                console.log("Sidebar state:", !isOpen); //debugging log
+            }}>
+                {isOpen ? <FaTimes /> : <FaBars />}
+            </button>
+                    
+            {/*Sidebar*/}
+            <nav className={`sidebar ${isOpen ? "open" : ""}`}>
+                <ul>
+                    <li onClick={() => scrollToSection("about")}>About</li>
+                    <li onClick={() => scrollToSection("projects")}>Projects</li>
+                    <li onClick={() => scrollToSection("tech-stack")}>Tech Stack</li>
+                    <li onClick={() => scrollToSection("contact")}>Contact</li>
+                </ul>
+            </nav>
+        </>
     );
 }
 
