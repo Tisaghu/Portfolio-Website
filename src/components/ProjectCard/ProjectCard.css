@@ -36,7 +36,7 @@
 .project-link {
     display: inline-block;
     padding: 8px 12px;
-    background-color: #007BFF;
+    background-color: #282c34;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -45,5 +45,5 @@
 }
 
 .project-link:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #8391ad; /* Darker shade on hover */
 }
