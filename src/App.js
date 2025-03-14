@@ -11,10 +11,10 @@ function App() {
     <div>
       <Navigation />
       <Header />
-      <section id="about"><About /></section>
-      <section id="projects"><Projects /></section>
-      <section id="tech-stack"><TechStack /></section>
-      <section id="contact"><Footer /></section>
+      <section id="about" className="section"><About /></section>
+      <section id="projects" className="section"><Projects /></section>
+      <section id="tech-stack" className="section"><TechStack /></section>
+      <section id="contact" className="section"><Footer /></section>
     </div>
   );
 }

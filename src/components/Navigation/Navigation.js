@@ -3,8 +3,13 @@ import "./Navigation.css";
 
 function Navigation() {
     const scrollToSection = (id) => {
-        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-    }
+        const section = document.getElementById(id);
+        if(section) {
+            const yOffset = -100;
+            const y = section.getBoundingClientRect().top + window.scrollY + yOffset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+    };
 
     return (
         <nav className="sidebar">
