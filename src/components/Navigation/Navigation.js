@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import { FaBars, FaTimes, FaUser, FaProjectDiagram, FaCode, FaEnvelope} from "react-icons/fa";
+import { FaBars, FaTimes} from "react-icons/fa";
 
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
