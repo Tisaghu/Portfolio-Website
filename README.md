@@ -4,15 +4,16 @@ A personal software engineering portfolio built with React to showcase my projec
 
 ![Portfolio Screenshot](screenshot.png) 
 
-## Live Demo  
+## Live Demo  - Coming soon
 [Check out my portfolio!](https://example.com) 
 
 ## Features  
 - **Dynamic Project Showcase** – Displays my software projects with descriptions and links  
 - **Tech Stack Section** – Lists the programming languages and frameworks I use  
-- **Smooth Navigation Sidebar** – Clickable menu to scroll between sections  
+- **Smooth Navigation Sidebar** – Clickable menu to scroll between sections that collapses into hamburger button on smaller screens
 - **Responsive Design** – Works on desktop and mobile devices  
 - **Interactive Animations** – CSS transitions for a sleek UI  
+- **Contact Form** - An easy way for anyone to reach out to me. Includes captcha to avoid spam.
 
 ## Built With  
 - **React** – Frontend framework  
@@ -37,4 +38,3 @@ A personal software engineering portfolio built with React to showcase my projec
 ## Future Improvements
 - Dark Mode – Add theme switching
 - More Animations – Improve UI experience
-- Contact Form – Allow visitors to send messages
