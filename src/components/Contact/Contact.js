@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
 
 function Contact() {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: ""
-    });
-
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [captchaVerified, setCaptchaVerified] = useState(false);
     const [isSent, setIsSent] = useState(false);
     const [error, setError] = useState(null);
 
@@ -16,14 +13,33 @@ function Contact() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+    const handleCaptcha = (value) => {
+        setCaptchaVerified(true); // User completed CAPTCHA
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        if (!captchaVerified) {
+            setError("Please complete the CAPTCHA.");
+            return;
+        }
+
+        if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+            setError("All fields are required.");
+            return;
+        }
+
+        if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            setError("Please enter a valid email.");
+            return;
+        }
+
         emailjs.send(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID || "default_service_id",
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "default_template_id",
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
             formData,
-            process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "default_public_key"
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
         .then(() => {
             setIsSent(true);
@@ -41,31 +57,15 @@ function Contact() {
             <h2>Contact Me</h2>
             {isSent && <p className="success-message">Message sent successfully!</p>}
             {error && <p className="error-message">{error}</p>}
+            
             <form onSubmit={handleSubmit} className="contact-form">
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                />
-                <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                />
-                <button type="submit">Send Message</button>
+                <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
+                <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
+                <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required />
+
+                <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={handleCaptcha} />
+
+                <button type="submit" disabled={!captchaVerified}>Send Message</button>
             </form>
         </section>
     );
