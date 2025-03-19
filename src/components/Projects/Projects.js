@@ -26,7 +26,14 @@ function Projects() {
              allows users to start, stop, and categorize tracked time, with logs stored in CSV format. Designed with modular architecture,
               it follows best practices in API design, front-end organization, and asynchronous JavaScript for a smooth user experience.`,
             link: "https://github.com/Tisaghu/Time-Tracker"
+        },
+        {
+            title: "Portfolio Website",
+            description: `This website. A responsive portfolio website built with React, showcasing my projects, skills, and contact information. 
+            Utilizes React components, CSS Grid, and Flexbox for a clean, modern design that adapts to various screen sizes.`,
+            link: "https://github.com/Tisaghu/Portfolio-Website"
         }
+
     ];
 
     return (
