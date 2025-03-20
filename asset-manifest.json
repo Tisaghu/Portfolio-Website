@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Website/static/css/main.6dcf1d62.css",
+    "main.js": "/Portfolio-Website/static/js/main.015d8e71.js",
+    "static/js/488.f1ad4097.chunk.js": "/Portfolio-Website/static/js/488.f1ad4097.chunk.js",
+    "static/media/flask-logo.svg": "/Portfolio-Website/static/media/flask-logo.87eda4d997d101b958c328a9c8692d40.svg",
+    "static/media/mysql-logo.svg": "/Portfolio-Website/static/media/mysql-logo.c9286640a470004f40f86d07817e890e.svg",
+    "static/media/react-logo.svg": "/Portfolio-Website/static/media/react-logo.dfbcffe01a34dbc037585f35c342ec0b.svg",
+    "static/media/aws-logo.svg": "/Portfolio-Website/static/media/aws-logo.482ae98bd199aa096dfaa67074122abb.svg",
+    "static/media/bootstrap-logo.svg": "/Portfolio-Website/static/media/bootstrap-logo.7282ff4a3cfcf95d7935fd6636bb17f7.svg",
+    "static/media/java-logo.svg": "/Portfolio-Website/static/media/java-logo.5386b56c3206b6bd70b1053534d73dc3.svg",
+    "static/media/c-sharp-logo.svg": "/Portfolio-Website/static/media/c-sharp-logo.9c286f0304c08db19ccd9386e240ab41.svg",
+    "static/media/php-logo.svg": "/Portfolio-Website/static/media/php-logo.a67115df2850aa2d252e5ad9be7c5078.svg",
+    "static/media/python-logo.svg": "/Portfolio-Website/static/media/python-logo.026a62687ef705a39cfc755d7457859c.svg",
+    "static/media/r-logo.svg": "/Portfolio-Website/static/media/r-logo.202b928bc13027e8c25721c71ff58c0d.svg",
+    "static/media/js-logo.svg": "/Portfolio-Website/static/media/js-logo.34cd9860149518f3e4ecc21a4b50efae.svg",
+    "static/media/git-logo.svg": "/Portfolio-Website/static/media/git-logo.43d387b77657117c0e407816cbf72476.svg",
+    "index.html": "/Portfolio-Website/index.html",
+    "static/media/unity-logo.svg": "/Portfolio-Website/static/media/unity-logo.8970ef3f9ec3e2b6cab0c1b23902f16e.svg",
+    "static/media/css-logo.svg": "/Portfolio-Website/static/media/css-logo.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "static/media/html5-logo.svg": "/Portfolio-Website/static/media/html5-logo.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.6dcf1d62.css.map": "/Portfolio-Website/static/css/main.6dcf1d62.css.map",
+    "main.015d8e71.js.map": "/Portfolio-Website/static/js/main.015d8e71.js.map",
+    "488.f1ad4097.chunk.js.map": "/Portfolio-Website/static/js/488.f1ad4097.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6dcf1d62.css",
+    "static/js/main.015d8e71.js"
+  ]
+}
