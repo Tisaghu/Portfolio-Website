@@ -18,7 +18,7 @@ function Navigation() {
     return (
         <>
             {/*Hamburger Menu Button */}
-            <button className="hamburger" onClick={() => {
+            <button className="hamburger" aria-label="Navigation Menu" onClick={() => {
                 setIsOpen(!isOpen);
                 console.log("Sidebar state:", !isOpen); //debugging log
             }}>
