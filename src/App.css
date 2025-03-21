@@ -39,4 +39,26 @@
 
 .section { 
   padding-top:60px;
+  background-color: var(--section-bg-color);
+}
+
+
+/* Light Mode Variables */
+:root {
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --section-bg-color: #ffffff;
+  --section-title-color: #222;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Variables */
+body.dark {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --section-bg-color: #1e1e1e;
+  --section-title-color: #e0e0e0;
+  --border-color: #555;
+  --shadow-color: rgba(0, 0, 0, 0.3);
 }

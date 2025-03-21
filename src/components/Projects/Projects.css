@@ -1,18 +1,18 @@
 .projects-section {
     padding: 40px 20px;
-    background: #f9f9f9;
+    background: var(--section-bg-color);
 }
 
 .projects-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--section-title-color);
 }
 
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adds spacing between the project cards */
-    justify-content: center; /* Centers the cards in the container */
+    gap: 20px; 
+    justify-content: center; 
 }

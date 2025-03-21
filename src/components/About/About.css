@@ -1,11 +1,11 @@
 .about-section {
     padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px var(--shadow-color);
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0px auto;
     line-height: 1.6;
     font-family: Arial, sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -13,12 +13,12 @@
 
 .about-section:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px var(--shadow-color);
 }
   
   .about-section h2 {
     font-size: 2rem;
-    color: #222;
+    color: var(--section-title-color);
     margin-bottom: 15px;
     border-bottom: 2px solid #ddd;
     display: inline-block;
