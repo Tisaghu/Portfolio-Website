@@ -2,10 +2,8 @@
 
 A personal software engineering portfolio built with React to showcase my projects, skills, and experience.  
 
-![Portfolio Screenshot](screenshot.png) 
-
-## Live Demo  - Coming soon
-[Check out my portfolio!](https://example.com) 
+## Live Demo 
+[Check out my portfolio!](https://www.samuelasher.dev) 
 
 ## Features  
 - **Dynamic Project Showcase** – Displays my software projects with descriptions and links  
