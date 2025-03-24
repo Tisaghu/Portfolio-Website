@@ -59,9 +59,9 @@ function Contact() {
             {error && <p className="error-message">{error}</p>}
             
             <form onSubmit={handleSubmit} className="contact-form">
-                <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
-                <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
-                <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required />
+                <input type="text" name="name" placeholder="Your Name" autocomplete="on" value={formData.name} onChange={handleChange} required />
+                <input type="email" name="email" placeholder="Your Email" autocomplete="on" value={formData.email} onChange={handleChange} required />
+                <textarea name="message" placeholder="Your Message" aria-hidden="true" value={formData.message} onChange={handleChange} required />
 
                 <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={handleCaptcha} />
 
