@@ -1,10 +1,11 @@
 import React from "react";
-import "./ProjectCard.css"; // Importing the external CSS file
+import "./ProjectCard.css";
 
-function ProjectCard({ title, description, link }) {
+function ProjectCard({ title, technologies, description, link }) {
     return (
         <div className="project-card">
             <h3 className="project-title">{title}</h3>
+            <p className="technologies">{technologies}</p>
             <p className="project-description">{description}</p>
             <a 
                 href={link} 
