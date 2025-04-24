@@ -23,10 +23,10 @@ function App() {
       <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
       <div className ="main-content">
-      <section id="about" className="section"><About /></section>
-      <section id="projects" className="section"><Projects /></section>
-      <section id="tech-stack" className="section"><TechStack /></section>
-      <section id="contact" className="section"><Contact /></section>
+        <section id="about" className="section"><About /></section>
+        <section id="projects" className="section"><Projects /></section>
+        <section id="tech-stack" className="section"><TechStack /></section>
+        <section id="contact" className="section"><Contact /></section>
       </div>
 
       <section id="footer" className="section"><Footer /></section>

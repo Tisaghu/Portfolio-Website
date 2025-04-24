@@ -33,6 +33,10 @@
     line-height: 1.4;
 }
 
+.technologies {
+    color: var(--text-color)
+}
+
 .project-link {
     display: inline-block;
     padding: 8px 12px;
