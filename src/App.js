@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   const storedTheme = localStorage.getItem("theme");
-  const [isDarkMode, setIsDarkMode] = useState(storedTheme === "dark");
+  const [isDarkMode, setIsDarkMode] = useState(storedTheme === "dark"); //Store theme preferences
 
   useEffect(() => {
     document.body.className = isDarkMode ? "dark" : "light";
@@ -18,19 +18,19 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div>
+    <>
       <Navigation />
       <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
-      <div className ="main-content">
+      <main>
         <section id="about" className="section"><About /></section>
         <section id="projects" className="section"><Projects /></section>
         <section id="tech-stack" className="section"><TechStack /></section>
         <section id="contact" className="section"><Contact /></section>
-      </div>
+      </main>
 
-      <section id="footer" className="section"><Footer /></section>
-    </div>
+      <footer className="section"><Footer /></footer>
+    </>
   );
 }
 

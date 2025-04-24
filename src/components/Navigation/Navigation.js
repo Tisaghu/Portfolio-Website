@@ -31,7 +31,7 @@ function Navigation() {
                     <li onClick={() => scrollToSection("about")}>About</li>
                     <li onClick={() => scrollToSection("projects")}>Projects</li>
                     <li onClick={() => scrollToSection("tech-stack")}>Tech Stack</li>
-                    <li onClick={() => scrollToSection("footer")}>Contact</li>
+                    <li onClick={() => scrollToSection("contact")}>Contact</li>
                 </ul>
             </nav>
         </>
