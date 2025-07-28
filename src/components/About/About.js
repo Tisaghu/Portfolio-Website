@@ -6,16 +6,14 @@ function About() {
     <section className="about-section">
       <h2>About Me</h2>
       <p>
-        I am a results-oriented Computer Science graduate from Northern Arizona University with a passion for solving complex problems through innovative software development.
-        My academic journey has equipped me with hands-on experience in developing creative solutions, such as the Gamified Language Data Explorer, where I collaborated with a
-        team to build an engaging platform that combines language learning with interactive games, powered by audio corpus exploration tools. <br /> <br />
+        I'm a Computer Science graduate from Northern Arizona University with a strong interest in building useful, well-designed software. I've worked on projects ranging from full-stack web apps to machine learning support tools, and I enjoy finding simple solutions to complex problems. <br></br><br></br>
 
-        With a strong foundation in programming, data structures, and artificial intelligence, I thrive in environments that challenge me to think critically and develop impactful
-        solutions. I am particularly drawn to opportunities in software engineering and development, where I can apply my technical expertise and creativity to tackle exciting new 
-        challenges. <br /> <br />
+        During school, I helped build a Gamified Language Data Explorer—a team project that combined interactive design, PHP, and SQL to explore an audio-text corpus. It taught me a lot about working with real-world data and collaborating across disciplines. <br></br><br></br>
 
-        I am eager to join a forward-thinking team where I can contribute to meaningful projects, grow as a professional, and make a difference through technology. Let’s connect
-        to discuss how I can bring value to your organization!
+        Since graduating, I’ve worked in tech roles that gave me hands-on experience with both hardware and software. I’ve built internal tools to automate workflows, supported large-scale infrastructure, and continued developing personal projects in Flask, React, and other technologies.
+
+        Right now, I’m focused on growing as a developer, contributing to meaningful projects, and learning as much as I can from the people around me. If you’re working on something cool and think I might be a good fit, feel free to reach out.
+
       </p>
     </section>
   );
